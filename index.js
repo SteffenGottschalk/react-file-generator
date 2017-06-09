@@ -5,25 +5,37 @@
  * @return {String}
  */
 module.exports = {
-  escape: function(html) {
-    return String(html)
-      .replace(/&/g, '&amp;')
-      .replace(/"/g, '&quot;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;');
-  },
+    escape: function (html) {
+        return String(html)
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+    },
 
-  /**
-   * Unescape special characters in the given string of html.
-   *
-   * @param  {String} html
-   * @return {String}
-   */
-  unescape: function(html) {
-    return String(html)
-      .replace(/&amp;/g, '&')
-      .replace(/&quot;/g, '"')
-      .replace(/&lt;/g, '<')
-      .replace(/&gt;/g, '>');
-  }
+    /**
+     * Unescape special characters in the given string of html.
+     *
+     * @param  {String} html
+     * @return {String}
+     */
+    unescape: function (html) {
+        return String(html)
+            .replace(/&amp;/g, '&')
+            .replace(/&quot;/g, '"')
+            .replace(/&lt;/g, '<')
+            .replace(/&gt;/g, '>');
+    },
+
+    /**
+     * log special characters in the given string of html.
+     *
+     * @param  {String} Name
+     * @return {String}
+     */
+    log: function (Name) {
+        console.log('Das ist ein Log' + Name + 'Ende')
+        return String('Plugun: ' + Name);
+    }
+
 };
