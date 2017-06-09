@@ -1,0 +1,23 @@
+{
+  "name": "react-file-generator",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://SteffenGottschalk@github.com/SteffenGottschalk/react-file-generator.git"
+  },
+  "author": "Steffen Gottschalk <steffen.socl@outlook.com> (http://www.steffen-gottschalk.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SteffenGottschalk/react-file-generator/issues"
+  },
+  "homepage": "https://github.com/SteffenGottschalk/react-file-generator#readme",
+  "devDependencies": {
+    "chai": "4.0.2",
+    "mocha": "3.4.2"
+  }
+}
